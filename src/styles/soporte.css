@@ -1,0 +1,137 @@
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    font-family: sans-serif;
+    margin-left: 13%;
+    margin-top: -620px;  
+    
+  }
+  .sidebar {
+    width: 250px;
+    background-color: #5375E6;
+    border-right: 1px solid #ccc;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    -webkit-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  -moz-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  
+  }
+  
+  .sidebar-header {
+    text-align: center;
+    padding: 20px;
+  }
+  .sidebar-header h1{
+    font-size: 20px;
+  }
+  .sidebar-nav {
+    list-style: none;
+    padding: 20px;
+    margin-left: 15px;
+  }
+  .logout{
+    margin-top: 40%;
+  }
+  
+  
+  .sidebar-nav li {
+    margin-bottom: 10px;
+    list-style: none;
+    margin-left:-10% ;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+  .sidebar-nav span {
+    margin-top: 10px;
+    margin-left: -30px;
+    position: absolute;
+  }
+  .sidebar-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: "Comfortaa", sans-serif;
+  
+  }
+  .sidebar-nav p{
+    margin-top: 5px;
+  }
+  .sidebar-nav li:hover{
+    color: #fff;
+    background-color: #1d214e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    border-radius: 5%;
+  
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    background-color: #5375E6;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 285px;
+  }
+  
+  .icon {
+    background-color: #df99df;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: url('/public/img/pc.png');
+    background-size: cover; /* This will ensure the image covers the entire .icon element */
+    background-position: center; /* This will center the image */
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cross {
+    background-color: #ff7070;
+    color: white;
+  }
+  
+  .check {
+    background-color: #64ff64;
+    color: white;
+  }
+
+  

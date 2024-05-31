@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Registro from './screens/registro';
 import Inicio from './screens/inicio';
+import Compu from './screens/regitrocompu';
+import ComputerStatus from './screens/soporte';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Inicio/>
+    <ComputerStatus/>
   </React.StrictMode>
 );
 
