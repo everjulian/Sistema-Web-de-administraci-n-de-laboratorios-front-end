@@ -13,10 +13,10 @@ const Inicio = () => {
         <div className="sidebar-nav">
           <ul>
             <li>
-              <a href=""><span class="material-symbols-outlined">add_to_queue</span> Registrar<p>Computadora</p></a>
+              <a href="rgstcompu.js"><span class="material-symbols-outlined">add_to_queue</span> Registrar<p>Computadora</p></a>
             </li>
             <li>
-              <a href="#"><span class="material-symbols-outlined">screen_search_desktop</span> Ver<p>Computadoras</p></a>
+              <a href="./registro.js"><span class="material-symbols-outlined">screen_search_desktop</span> Ver<p>Computadoras</p></a>
             </li>
             <li>
               <a href="#"><span class="material-symbols-outlined">info</span> Soporte<p>Computadoras</p></a>
