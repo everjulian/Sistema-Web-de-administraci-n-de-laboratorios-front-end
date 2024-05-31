@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Registro from './screens/registro';
 import Inicio from './screens/inicio';
+import Estado from './screens/estado';
+import Lista from './screens/lista';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Inicio/>
+    <Lista/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,270 @@
+.App {
+    display: flex;
+    font-family: "Comfortaa", sans-serif;
+  
+  }
+  /*MENU LATERAL*/
+  .sidebar {
+    width: 250px;
+    background-color: #5375E6;
+    border-right: 1px solid #ccc;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    -webkit-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  -moz-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  
+  }
+  
+  .sidebar-header {
+    text-align: center;
+    padding: 20px;
+  }
+  .sidebar-header h1{
+    font-size: 20px;
+  }
+  .sidebar-nav {
+    list-style: none;
+    padding: 20px;
+    margin-left: 15px;
+  }
+  .logout{
+    margin-top: 40%;
+  }
+  .sidebar-nav li {
+    margin-bottom: 10px;
+    list-style: none;
+    margin-left:-10% ;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+  .sidebar-nav span {
+    margin-top: 10px;
+    margin-left: -30px;
+    position: absolute;
+  }
+  .sidebar-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: "Comfortaa", sans-serif;
+  
+  }
+  .sidebar-nav p{
+    margin-top: 5px;
+  }
+  .sidebar-nav li:hover{
+    color: #fff;
+    background-color: #1d214e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    border-radius: 5%;
+  
+  }
+  /*CONTENIDO PARTE DERECHA*/
+  .content {
+    flex: 2;
+  }
+  /*TIUTLO E INFORMACION SUPERIOR*/
+ .titulo{
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 3%;
+ }
+ .titulo h1{
+    font-size: 22px;
+ }
+/*TABLA DE FILTRO*/
+.filtroTable{
+    text-align: center;
+    padding: 3%;
+
+}
+.filtroTable td{
+    padding: 6px;
+}
+/*TABLA-LISTA DE COMPUTADORAS*/
+.listaTable{
+    padding: 3%;
+    font-size: 14px;
+    
+}
+
+.listaTable td{
+    padding-left: 35px;
+    padding-top: 5px;
+}
+
+/*BOTON ELIMINAR*/
+.deleteButton {
+    background-color: #c5d4f8;
+    color: #1d214e;
+    padding: 5px 7px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20px;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position: relative;
+    float: right;
+  
+  }
+  .deleteButton:hover{
+    color: #fff;
+    background-color: #b63c3c;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  
+  }
+/*BOTON EDITAR*/
+.editButton {
+    background-color: #c5d4f8;
+    color: #1d214e;
+    padding: 5px 7px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20px;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position: relative;
+    float: left;
+  
+  }
+  .editButton:hover{
+    color: #fff;
+    background-color: #d3b334;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  
+  }
+/*CHECKBOX*/
+  .control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: -6px;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px inset #000000;
+    border-radius: 20px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #343973;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #1d214e;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 35;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+.control-checkbox .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #2aa1c0;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+}
+@keyframes s-ripple {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.control-checkbox input + .control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+.control-checkbox input:checked + .control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+.check1{
+    width: auto;
+    float: right;
+}
