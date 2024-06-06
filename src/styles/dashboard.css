@@ -1,0 +1,120 @@
+.d-body{
+    height: 100vh;
+}
+
+  .content {
+    flex: 2;
+  }
+  
+  .banner {
+    background-position: center;
+    text-align: center;
+    background-size: auto;
+    font-family: "Comfortaa", sans-serif;
+    background-image: url('/public/img/banner.jpg');
+    padding: 1px;
+    height: 270px;
+    border-radius: 0 0 9px 9px;
+  
+  }
+  
+  
+  h6{
+    text-align: center;
+    font-size: 18px;
+  }
+  .banner button {
+    background-color: #c5d4f8;
+    color: #1d214e;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20px;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position: relative;
+    text-decoration: none;
+  
+  }
+  .banner button:hover{
+    color: #fff;
+    background-color: #1d214e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  
+  }
+  .banner p{
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+  
+  }
+  
+  .cuadros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: "Comfortaa", sans-serif;
+  
+  }
+  .cuadros:hover{
+    transform: translateY(-2px);
+
+  }
+  .cuadro {
+    width: 170px;
+    height: 200px;
+    background-color: #5375E6;
+    text-align: center;
+    padding: 20px;
+    font-family: "Comfortaa", sans-serif;
+    border-radius: 4%;
+    -webkit-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  -moz-box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  box-shadow: -1px 2px 33px -2px rgba(0,0,0,0.41);
+  
+  
+  }
+  
+  .cuadro h2 {
+    margin-top: 0;
+  }
+  
+  .cuadro img{
+    background-size: contain;
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .cuadro button{
+    background-color: #c5d4f8;
+    color: #1d214e;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 15%;
+    border-radius: 20px;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  
+  }
+  .cuadro button:hover{
+    color: #fff;
+    background-color: #1d214e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  
+  }
+  

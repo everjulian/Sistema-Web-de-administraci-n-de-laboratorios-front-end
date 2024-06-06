@@ -1,0 +1,54 @@
+.App {
+    display: flex;
+    font-family: "Comfortaa", sans-serif;
+  
+  }
+ 
+  /*CONTENIDO PARTE DERECHA*/
+  .content {
+    flex: 2;
+  }
+  /*TIUTLO E INFORMACION SUPERIOR*/
+ .titulo{
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 3%;
+ }
+ .titulo h1{
+    font-size: 22px;
+ }
+/*TABLA DE FILTRO*/
+.filtroTable{
+    text-align: center;
+    padding: 3%;
+
+}
+.filtroTable td{
+    padding: 6px;
+}
+  /*BOTON EDITAR*/
+  .btn {
+    background-color: #c5d4f8;
+    color: #1d214e;
+    padding: 5px 7px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 20px;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    position: relative;
+    float: left;
+  
+  }
+  .btn:hover{
+    color: #fff;
+    background-color: #30aa4e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  
+  }
